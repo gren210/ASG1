@@ -1,5 +1,39 @@
-#background{
-    background-color:rgb(48, 48, 48)
+.background{
+    background-color:rgb(48, 48, 48);
+}
+#links{
+    text-align:center;
+}
+
+.menu{
+    overflow: hidden;
+    background-color: rgb(48, 48, 48);
+    position:fixed;
+    top:0;
+    width:100%;
+    border:#000000;
+    border-radius:2px;
+    z-index:2;
+}
+  
+.menu a {
+    float: left;
+    text-align: center;
+    font-family:Bebas Neue;
+    padding: 14px 30px;
+    font-size: 25px;
+    color: #f2f2f2;
+    text-decoration:none;
+}
+  
+.menu a:hover {
+    background-color: #ddd;
+    color: black;
+}
+  
+.menu a.active {
+    background-color: #000000;
+    color: white;
 }
 
 #line-height{
@@ -83,11 +117,13 @@ h3{
     flex-grow:1;
     flex-basis:22%;
     flex-direction:column;
+    text-align:center;
 }
 
 img{
     max-width:100%;
     height:auto;
+    z-index:-1;
 }
 
 button{

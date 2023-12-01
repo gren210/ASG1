@@ -49,6 +49,35 @@
     flex-flow:column ;
 }
 
+.dates{
+    font-family: Bebas Neue;
+    font-size:50px;
+    color:white;
+    margin-right:3%;
+    margin-left:3%;
+    display:inline-block;
+}
+
+.time{
+    color:white;
+    font-size:50px;
+    font-family: Bebas Neue;
+    display:inline-block;
+
+}
+
+.location{
+    color:white;
+    font-size:50px;
+    font-family: Bebas Neue;
+    display:inline-block;
+    margin-left:3%
+}
+
+.upcoming{
+    margin-left:3%;
+}
+
 h1{
     color:white;
     font-size:100px;
@@ -108,6 +137,14 @@ h3{
     flex-grow:1;
     flex-basis:47%;
     flex-direction:column;
+}
+.split2{
+    display:flex;
+    padding:1%;
+    position:relative;
+    flex-grow:1;
+    flex-basis:47%;
+    flex-direction:row;
 }
 
 .socials{

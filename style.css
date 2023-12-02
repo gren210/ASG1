@@ -1,8 +1,20 @@
+body {
+    animation: fadeInAnimation ease 3s;
+    animation-iteration-count: 1;
+    animation-fill-mode: forwards;
+}
+ 
+@keyframes fadeInAnimation {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+     }
+}
+
 .background{
     background-color:rgb(48, 48, 48);
-}
-#links{
-    text-align:center;
 }
 
 .menu{
@@ -14,6 +26,19 @@
     border:#000000;
     border-radius:2px;
     z-index:2;
+}
+
+.arena{
+    font-size:45px;
+    font-family:Bebas Neue;
+    color:white;
+    font-size:45px;
+}
+
+.arena_img{
+    width:400px;
+    margin-left: auto;
+    margin-right: auto;
 }
   
 .menu a {
@@ -51,16 +76,17 @@
 
 .dates{
     font-family: Bebas Neue;
-    font-size:50px;
+    font-size:40px;
     color:white;
     margin-right:3%;
     margin-left:3%;
     display:inline-block;
+    min-width:20%;
 }
 
 .time{
     color:white;
-    font-size:50px;
+    font-size:40px;
     font-family: Bebas Neue;
     display:inline-block;
 
@@ -68,7 +94,7 @@
 
 .location{
     color:white;
-    font-size:50px;
+    font-size:40px;
     font-family: Bebas Neue;
     display:inline-block;
     margin-left:3%
@@ -84,12 +110,12 @@ h1{
     font-family: Bebas Neue;
 }
 
-#description{
+.description{
     color:white;
+    position:relative;
     font-family: Bebas Neue;
-    margin-right:45%;
     text-align:left;
-    font-size:55px;
+    font-size: 45px;
 }
 .title{
     color:white;
@@ -160,6 +186,11 @@ h3{
     flex-basis:22%;
     flex-direction:column;
     text-align:center;
+    font-family:Asap Condensed;
+    background-color:white;
+    border-radius:5px;
+    text-decoration:none;
+
 }
 
 img{
@@ -167,13 +198,116 @@ img{
     height:auto;
     z-index:-1;
 }
+.music-header{
+    text-align:center;
+    margin-top:125px;
+}
 
-button{
-    font-family:Asap Condensed;
-    align-self:center;
-    background-color:white;
-    border-radius:5px;
-    padding-top:10px;
-    padding-bottom:10px;
-    width: 50%;
+.slideshow {
+    display: none;
+    align-content:center;
+    margin-top:auto;
+    margin-bottom:auto;
+}
+.previous, .next {
+    cursor:pointer;
+    position:absolute;
+    top:50%;
+    width:auto;
+    margin-top:-22px;
+    padding:16px;
+    color: white;
+    font-weight:bold;
+    font-size:18px;
+    transition:0.6s ease;
+    border-radius:0 3px 3px 0;
+    user-select:none;
+  }
+
+.next {
+right: 0;
+border-radius: 3px 0 0 3px;
+}
+  
+.previous:hover, .next:hover {
+background-color: rgba(0,0,0,0.8);
+}
+
+.fade {
+    animation-name: fade;
+    animation-duration: 1.5s;
+}
+  
+@keyframes fade {
+    from {opacity: .4}
+    to {opacity: 1}
+}
+
+@media (max-width: 920px) {
+    .description{
+        color:white;
+        position:relative;
+        font-family: Bebas Neue;
+        text-align:left;
+        font-size: 25px;
+    }
+    .dates{
+        font-family: Bebas Neue;
+        font-size:20px;
+        color:white;
+        margin-right:3%;
+        margin-left:3%;
+        display:inline-block;
+    }
+    
+    .time{
+        color:white;
+        font-size:20px;
+        font-family: Bebas Neue;
+        display:inline-block;
+    
+    }
+    
+    .location{
+        color:white;
+        font-size:20px;
+        font-family: Bebas Neue;
+        display:inline-block;
+        margin-left:3%
+    }
+    .header{
+        color:white;
+        font-family:Bebas Neue;
+        font-size:15px;
+    }
+    
+    .text{
+        color:white;
+        font-family:Asap Condensed;
+        font-size:15px;
+    }
+    .arena{
+        font-size:25px;
+    }
+    .socials{
+        display:flex;
+        padding:1%;
+        position:relative;
+        flex-grow:1;
+        flex-basis:22%;
+        flex-direction:column;
+        text-align:center;
+
+    }
+    .album2{
+        width:80px;
+        height:80px;
+        margin-left: auto;
+        margin-right: auto;
+    }
+    .music-header{
+        text-align:center;
+        font-size:50px;
+        margin-top:90px;
+    }
 }
